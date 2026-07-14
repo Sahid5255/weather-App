@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: aliceblue;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+.container{
+    background-color: #094e9c;
+    padding: 15px;
+    border-radius: 15px;
+    height: 90vh;
+    width: 40%;
+    text-align: center;
+}
+h2 {
+    font-size: 2rem;
+    color: white;
+}
+h2 i{
+    color: skyblue;
+}
+.weatherForm{
+    display: flex;
+    justify-content: space-around;
+    gap: 5px;
+    margin-top: 15px;
+}
+.weatherForm input{
+    padding: 20px;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    flex: 1;
+    color: white;
+    background:rgba(255,255,255,.2);
+}
+input::placeholder {
+    color: white;
+}
+.weatherForm button{
+    width: 15%;
+    height: 10vh;
+    border: none;
+    border-radius: 20px;
+    color: skyblue;
+    background:rgba(255,255,255,.2);
+}
+.card-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+  background: linear-gradient(135deg, #d6dce5, #8319d4, #0cc5b6);
+  padding: 20px;
+  width: 75%;
+  height: 35vh;
+  flex-direction: column;
+  display: none;
+  gap: 10px;
+}
+p{
+    font-size: 1.2rem;
+    color: rgb(20, 18, 18);
+}
+
+@media (max-width: 768px) {
+    .container{
+        width: 50vh;
+        height: 70vh;
+    }
+    h2{
+        font-size: 1.4rem;
+    }
+    .weatherForm input{
+        height: 5vh;
+    }
+    .weatherForm button{
+        height: 5vh;
+        border-radius: 10px;
+    }
+    .card{
+        width: 90%;
+        padding: 40px;
+    }
+}
