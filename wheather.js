@@ -18,7 +18,6 @@ if(city){
 
   }catch (error){
    console.log(error)
-   displayError(error)
   }
 
 }else{
@@ -28,7 +27,7 @@ if(city){
 
 async function getWeatherData(city) {
 const response = await fetch(
-      `http://api.openweathermap.org/data/2.5/weather?&units=metric&q=${city}&limit=5&appid=${apiKey}`
+      `https://api.openweathermap.org/data/2.5/weather?&units=metric&q=${city}&limit=5&appid=${apiKey}`
     );
 
   console.log(response);
